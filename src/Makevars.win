@@ -1,0 +1,14 @@
+SOURCES=	medstc/cokus.cpp	medstc/lbfgscpp.cpp	medstc/medstc.cpp	medstc/utils.cpp	medstc/corpus.cpp	medstc/main.cpp		medstc/params.cpp \
+			svm_multiclass/svm_struct_api.cpp	svm_multiclass/svm_struct_common.cpp	svm_multiclass/svm_struct_learn.cpp \
+			svmlight/svm_common.cpp	svmlight/svm_hideo.cpp	svmlight/svm_learn.cpp
+
+OBJECTS = $(SOURCES:.cpp=.o)
+
+PKG_CPPFLAGS=-I. -D WINDOWS_VERSION
+
+PKG_LIBS=-lstdc++
+
+all: $(SHLIB)
+
+clean:
+	@rm -f $(OBJECTS)

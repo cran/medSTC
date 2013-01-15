@@ -1,0 +1,6 @@
+newsgroup.test.documents
+newsgroup.test.labels
+newsgroup.train.documents
+newsgroup.train.labels
+newsgroup.vocab
+stopwords

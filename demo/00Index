@@ -1,0 +1,1 @@
+medSTC	Fit a medSTC model to the newsgroup dataset and generate a confusion matrix, prediction accuracy number, and top 5 representatives of each topic.
